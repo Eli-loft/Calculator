@@ -1,23 +1,41 @@
-<<<<<<< HEAD
-# Calculator
-A simple 2 pass calculator project to follow up the bank account project
-=======
-## Getting Started
+Calculator Java Project
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+Overview
 
-## Folder Structure
+This project is a simple arithmetic expression evaluator that demonstrates basic Java programming concepts and a straightforward implementation of operator precedence. It allows the user to input an arithmetic equation (e.g., 25-10/2*1.5), tokenizes the input, and computes the result using a two-step evaluation process.
 
-The workspace contains two folders by default, where:
+The project is divided into two main components:
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+Calc.java:Contains the logic for evaluating arithmetic expressions. It handles operator precedence by first processing multiplication and division, then addition and subtraction.
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+tester.java:Acts as the user interface. It prompts the user to enter an arithmetic equation, tokenizes the input, and displays the computed result.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+Features
 
-## Dependency Management
+Operator Precedence:The calculator correctly handles the order of operations by processing multiplication and division before addition and subtraction.
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
->>>>>>> 40c4d94 (Calculator Project)
+User Input:Users can input an equation in a single line (e.g., 25-10/2*1.5), and the program will tokenize and evaluate the expression.
+
+Simple Testing via Main Method:A main method is provided in the tester class for quick manual testing without the need for external testing frameworks.
+
+How to Run
+
+Compile the Java Files:Open a terminal in VSCode (or your preferred IDE) and run:
+
+javac Calc.java tester.java
+
+Run the Tester Program:Execute the tester class:
+
+java tester
+
+Follow the On-Screen Prompts:Enter an arithmetic equation when prompted. The program will display the computed result.
+
+Example Interaction
+
+enter the equation (i.e. 25-10/2*1.5)
+25-10/2*1.5
+result: 17.5
+
+Purpose
+
+This project was created to reinforce key programming concepts such as string manipulation, tokenization using regular expressions, and implementing basic arithmetic evaluations while respecting operator precedence. It serves as a foundation for building more complex expression evaluators and further exploring Java programming practices.
